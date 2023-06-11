@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="40dp">
+        <GridLayout
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="#EEEEEE"
+            android:columnCount="2"
+            android:useDefaultMargins="true">
+            <Button
+                android:id="@+id/btnConfigure"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:onClick="configureGlasses"
+                android:text="Configure Glasses"/>
+            <Button
+                android:id="@+id/btnSettings"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:onClick="showSettings"
+                android:text="Show Settings"/>
+            <Button
+                android:id="@+id/btnScreenOn"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:onClick="screenOn"
+                android:text="Screen On">
+            </Button>
+            <Button
+                android:id="@+id/btnScreenOff"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:onClick="screenOff"
+                android:text="Screen Off">
+
+            </Button>
+            <Button
+                android:id="@+id/btnScreenLeft"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:onClick="screenLeft"
+                android:text="Move Left">
+            </Button>
+            <Button
+                android:id="@+id/btnScreenRight"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:onClick="screenRight"
+                android:text="Move Right">
+
+            </Button>
+            <Button
+                android:id="@+id/btnBrightnessMinus"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:onClick="brightnessMinus"
+                android:text="Less Brightness">
+            </Button>
+            <Button
+                android:id="@+id/btnBrightnessPlus"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:onClick="brightnessPlus"
+                android:text="More Brightness">
+            </Button>
+
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:text="Disconnected"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:OtaHandling/OtaHandling.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Animations/Animations.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:GlassesEvents/GlassesEvents.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ImagesHandling/ImagesHandling.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UIElements/UIElements.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CustomControls/CustomControls.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:GlassesControl/GlassesControl.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:HelloWorld/HelloWorld.xcodeproj">
+   </FileRef>
+</Workspace>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Glasses Control View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GlassesControlViewController" customModule="GlassesControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="dIG-Et-PxU">
+                                <rect key="frame" x="20" y="348" width="374" height="200.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="9pi-Uf-T91">
+                                        <rect key="frame" x="54" y="0.0" width="266" height="120"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jg3-6W-vCU">
+                                                <rect key="frame" x="0.0" y="2" width="118" height="116"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0O-sf-6Zh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="29"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <state key="normal" title="Configure Glasses"/>
+                                                        <connections>
+                                                            <action selector="onConfigureGlassesPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mSm-qL-R22"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8C5-hT-WgB">
+                                                        <rect key="frame" x="0.0" y="29" width="118" height="29"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <state key="normal" title="Screen On"/>
+                                                        <connections>
+                                                            <action selector="onScreenOnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ObZ-Be-2Gm"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afB-Bo-GJC">
+                                                        <rect key="frame" x="0.0" y="58" width="118" height="29"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <state key="normal" title="Move Left"/>
+                                                        <connections>
+                                                            <action selector="onMoveLeftPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZtW-GX-Gr8"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMy-yJ-WkM">
+                                                        <rect key="frame" x="0.0" y="87" width="118" height="29"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <state key="normal" title="Less Brightness"/>
+                                                        <connections>
+                                                            <action selector="onLessBrightnessPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Zg-ee-L1r"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jr8-w9-eRz">
+                                                <rect key="frame" x="148" y="0.0" width="118" height="120"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGK-to-2uo">
+                                                        <rect key="frame" x="0.0" y="0.0" width="118" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <state key="normal" title="Show Settings"/>
+                                                        <connections>
+                                                            <action selector="onSettingsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wTh-JT-Qfa"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7H-ox-wMN">
+                                                        <rect key="frame" x="0.0" y="30" width="118" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <state key="normal" title="Screen off"/>
+                                                        <connections>
+                                                            <action selector="onScreenOffPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iva-eL-03B"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMA-b1-mgY">
+                                                        <rect key="frame" x="0.0" y="60" width="118" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <state key="normal" title="Move Right"/>
+                                                        <connections>
+                                                            <action selector="onMoveRightPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3pM-06-msS"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLe-yz-gxN">
+                                                        <rect key="frame" x="0.0" y="90" width="118" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <state key="normal" title="More Brightness"/>
+                                                        <connections>
+                                                            <action selector="onMoreBrightnessPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A1k-Pg-8uo"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disconnected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKB-YY-l5m">
+                                        <rect key="frame" x="134.5" y="180" width="105.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dIG-Et-PxU" secondAttribute="trailing" constant="20" id="dJG-TK-TZE"/>
+                            <constraint firstItem="dIG-Et-PxU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gr4-Zj-504"/>
+                            <constraint firstItem="dIG-Et-PxU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yj8-ke-MzS"/>
+                            <constraint firstItem="dIG-Et-PxU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yt5-HF-bwT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="statusLbl" destination="EKB-YY-l5m" id="wqZ-lf-NdO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-46" y="76"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

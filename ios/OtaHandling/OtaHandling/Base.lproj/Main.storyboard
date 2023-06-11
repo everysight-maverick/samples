@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ota Handling View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="OtaHandlingViewController" customModule="OtaHandling" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5ZW-nu-efz">
+                                <rect key="frame" x="130" y="348" width="154" height="200.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disconnected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ml-HW-hBT">
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5A-Kx-NM9">
+                                        <rect key="frame" x="0.0" y="20.5" width="154" height="30"/>
+                                        <state key="normal" title="Init - Default OTA"/>
+                                        <connections>
+                                            <action selector="initSdkDefaultOtaHandling:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bRq-l1-Us6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0Z-bM-TBS">
+                                        <rect key="frame" x="0.0" y="50.5" width="154" height="30"/>
+                                        <state key="normal" title="Init - Custom Trigger"/>
+                                        <connections>
+                                            <action selector="initSdkCustomOtaTrigger:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uX6-8K-Fg8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQy-oC-1CW">
+                                        <rect key="frame" x="0.0" y="80.5" width="154" height="30"/>
+                                        <state key="normal" title="Init - Custom Progress"/>
+                                        <connections>
+                                            <action selector="initSdkCustomOtaProgress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nbf-xa-8Gg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xjB-rf-UTx">
+                                        <rect key="frame" x="0.0" y="110.5" width="154" height="30"/>
+                                        <state key="normal" title="Settings"/>
+                                        <connections>
+                                            <action selector="onSettingsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o0c-90-nKA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9k-p3-zd8">
+                                        <rect key="frame" x="0.0" y="140.5" width="154" height="30"/>
+                                        <state key="normal" title="Configure"/>
+                                        <connections>
+                                            <action selector="onConfiguredPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yle-uV-0hC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPe-0S-taO">
+                                        <rect key="frame" x="0.0" y="170.5" width="154" height="30"/>
+                                        <state key="normal" title="Start OTA Sim"/>
+                                        <connections>
+                                            <action selector="startOtaSim:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8pq-va-WvU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5ZW-nu-efz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="f2a-uB-L5R"/>
+                            <constraint firstItem="5ZW-nu-efz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gl5-LF-YHU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnConfigure" destination="S9k-p3-zd8" id="Ggi-Om-naL"/>
+                        <outlet property="btnInitCustomProgress" destination="tQy-oC-1CW" id="vEG-nO-T9s"/>
+                        <outlet property="btnInitCustomTrigger" destination="M0Z-bM-TBS" id="VF6-YU-txg"/>
+                        <outlet property="btnInitDefault" destination="B5A-Kx-NM9" id="6kh-jh-J24"/>
+                        <outlet property="btnSettings" destination="xjB-rf-UTx" id="MUe-Eg-P6P"/>
+                        <outlet property="statusLbl" destination="9ml-HW-hBT" id="sSM-lI-a5b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-183" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

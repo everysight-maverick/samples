@@ -1,0 +1,1 @@
+Copy your Everysight developer certificate file here.

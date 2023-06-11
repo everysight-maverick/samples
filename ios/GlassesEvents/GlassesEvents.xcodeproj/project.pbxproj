@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B2064C47252D1B7D00BD36AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064C46252D1B7D00BD36AA /* AppDelegate.swift */; };
+		B2064C49252D1B7D00BD36AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064C48252D1B7D00BD36AA /* SceneDelegate.swift */; };
+		B2064C4B252D1B7D00BD36AA /* GlassesEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064C4A252D1B7D00BD36AA /* GlassesEventsViewController.swift */; };
+		B2064C4E252D1B7D00BD36AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2064C4C252D1B7D00BD36AA /* Main.storyboard */; };
+		B2064C50252D1B7E00BD36AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2064C4F252D1B7E00BD36AA /* Assets.xcassets */; };
+		B2064C53252D1B7E00BD36AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2064C51252D1B7E00BD36AA /* LaunchScreen.storyboard */; };
+		B2064C69252D1E0200BD36AA /* GlassesEventsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064C68252D1E0200BD36AA /* GlassesEventsScreen.swift */; };
+		B2F8A383257F6948004E4619 /* NativeEvsKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F8A381257F6948004E4619 /* NativeEvsKit.xcframework */; };
+		B2F8A384257F6948004E4619 /* NativeEvsKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2F8A381257F6948004E4619 /* NativeEvsKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B2F8A385257F6948004E4619 /* EvsKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F8A382257F6948004E4619 /* EvsKit.xcframework */; };
+		B2F8A386257F6948004E4619 /* EvsKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2F8A382257F6948004E4619 /* EvsKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B2F8A387257F6948004E4619 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B2F8A384257F6948004E4619 /* NativeEvsKit.xcframework in Embed Frameworks */,
+				B2F8A386257F6948004E4619 /* EvsKit.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B2064C43252D1B7D00BD36AA /* GlassesEvents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlassesEvents.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2064C46252D1B7D00BD36AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B2064C48252D1B7D00BD36AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B2064C4A252D1B7D00BD36AA /* GlassesEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassesEventsViewController.swift; sourceTree = "<group>"; };
+		B2064C4D252D1B7D00BD36AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B2064C4F252D1B7E00BD36AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2064C52252D1B7E00BD36AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B2064C54252D1B7E00BD36AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2064C5D252D1BEC00BD36AA /* EvsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EvsKit.framework; path = ../libs/EvsKit.framework; sourceTree = "<group>"; };
+		B2064C61252D1BEE00BD36AA /* NativeEvsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NativeEvsKit.framework; path = ../libs/NativeEvsKit.framework; sourceTree = "<group>"; };
+		B2064C68252D1E0200BD36AA /* GlassesEventsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassesEventsScreen.swift; sourceTree = "<group>"; };
+		B2077B3D254FE343008430F2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B2F8A381257F6948004E4619 /* NativeEvsKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = NativeEvsKit.xcframework; path = ../libs/NativeEvsKit.xcframework; sourceTree = "<group>"; };
+		B2F8A382257F6948004E4619 /* EvsKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = EvsKit.xcframework; path = ../libs/EvsKit.xcframework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2064C40252D1B7D00BD36AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2F8A383257F6948004E4619 /* NativeEvsKit.xcframework in Frameworks */,
+				B2F8A385257F6948004E4619 /* EvsKit.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2064C3A252D1B7D00BD36AA = {
+			isa = PBXGroup;
+			children = (
+				B2064C45252D1B7D00BD36AA /* GlassesEvents */,
+				B2064C44252D1B7D00BD36AA /* Products */,
+				B2064C5C252D1BEC00BD36AA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B2064C44252D1B7D00BD36AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2064C43252D1B7D00BD36AA /* GlassesEvents.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2064C45252D1B7D00BD36AA /* GlassesEvents */ = {
+			isa = PBXGroup;
+			children = (
+				B2064C64252D1CA300BD36AA /* Resources */,
+				B2064C67252D1DF600BD36AA /* Glasses */,
+				B2064C46252D1B7D00BD36AA /* AppDelegate.swift */,
+				B2064C48252D1B7D00BD36AA /* SceneDelegate.swift */,
+				B2064C4A252D1B7D00BD36AA /* GlassesEventsViewController.swift */,
+				B2064C4C252D1B7D00BD36AA /* Main.storyboard */,
+				B2064C4F252D1B7E00BD36AA /* Assets.xcassets */,
+				B2064C51252D1B7E00BD36AA /* LaunchScreen.storyboard */,
+				B2064C54252D1B7E00BD36AA /* Info.plist */,
+			);
+			path = GlassesEvents;
+			sourceTree = "<group>";
+		};
+		B2064C5C252D1BEC00BD36AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2F8A382257F6948004E4619 /* EvsKit.xcframework */,
+				B2F8A381257F6948004E4619 /* NativeEvsKit.xcframework */,
+				B2064C61252D1BEE00BD36AA /* NativeEvsKit.framework */,
+				B2064C5D252D1BEC00BD36AA /* EvsKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2064C64252D1CA300BD36AA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B2077B3D254FE343008430F2 /* README.md */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B2064C67252D1DF600BD36AA /* Glasses */ = {
+			isa = PBXGroup;
+			children = (
+				B2064C68252D1E0200BD36AA /* GlassesEventsScreen.swift */,
+			);
+			path = Glasses;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2064C42252D1B7D00BD36AA /* GlassesEvents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2064C57252D1B7E00BD36AA /* Build configuration list for PBXNativeTarget "GlassesEvents" */;
+			buildPhases = (
+				B2064C3F252D1B7D00BD36AA /* Sources */,
+				B2064C40252D1B7D00BD36AA /* Frameworks */,
+				B2064C41252D1B7D00BD36AA /* Resources */,
+				B2F8A387257F6948004E4619 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlassesEvents;
+			productName = GlassesEvents;
+			productReference = B2064C43252D1B7D00BD36AA /* GlassesEvents.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2064C3B252D1B7D00BD36AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					B2064C42252D1B7D00BD36AA = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = B2064C3E252D1B7D00BD36AA /* Build configuration list for PBXProject "GlassesEvents" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2064C3A252D1B7D00BD36AA;
+			productRefGroup = B2064C44252D1B7D00BD36AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2064C42252D1B7D00BD36AA /* GlassesEvents */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2064C41252D1B7D00BD36AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2064C53252D1B7E00BD36AA /* LaunchScreen.storyboard in Resources */,
+				B2064C50252D1B7E00BD36AA /* Assets.xcassets in Resources */,
+				B2064C4E252D1B7D00BD36AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2064C3F252D1B7D00BD36AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2064C4B252D1B7D00BD36AA /* GlassesEventsViewController.swift in Sources */,
+				B2064C47252D1B7D00BD36AA /* AppDelegate.swift in Sources */,
+				B2064C49252D1B7D00BD36AA /* SceneDelegate.swift in Sources */,
+				B2064C69252D1E0200BD36AA /* GlassesEventsScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B2064C4C252D1B7D00BD36AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2064C4D252D1B7D00BD36AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B2064C51252D1B7E00BD36AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2064C52252D1B7E00BD36AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2064C55252D1B7E00BD36AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B2064C56252D1B7E00BD36AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2064C58252D1B7E00BD36AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 393M9SB2UU;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../libs/";
+				INFOPLIST_FILE = GlassesEvents/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.everysight.sdk.samples.GlassesEvents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B2064C59252D1B7E00BD36AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 393M9SB2UU;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../libs/";
+				INFOPLIST_FILE = GlassesEvents/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.everysight.sdk.samples.GlassesEvents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2064C3E252D1B7D00BD36AA /* Build configuration list for PBXProject "GlassesEvents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2064C55252D1B7E00BD36AA /* Debug */,
+				B2064C56252D1B7E00BD36AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2064C57252D1B7E00BD36AA /* Build configuration list for PBXNativeTarget "GlassesEvents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2064C58252D1B7E00BD36AA /* Debug */,
+				B2064C59252D1B7E00BD36AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2064C3B252D1B7D00BD36AA /* Project object */;
+}
