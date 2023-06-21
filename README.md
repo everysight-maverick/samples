@@ -19,7 +19,7 @@ The SDK API enables implementing those functionalities without the need to use o
 
 1. Read our [Development Resources](https://everysight.github.io/maverick_docs/) documentation
 
-2. Download the latest SDK libraries from the [releases page](https://github.com/everysight-maverick/sdk/tree/releases)
+2. Download the latest SDK libraries from [SDK Repository](https://github.com/everysight-maverick/sdk)
 
 3. Explore the [Android samples folder](./android) and the [IOS samples folder](./ios) within this repository
 
