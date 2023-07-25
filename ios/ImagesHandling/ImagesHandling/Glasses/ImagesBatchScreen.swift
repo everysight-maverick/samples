@@ -42,23 +42,10 @@ class ImagesBatchScreen:Screen {
         if let imgs = images {
             requestResourcesUpload(resources: imgs.getResources())
         }
-
-    }
-
-   
-    
-    override func onResume() {
-        super.onResume()
-        // If your application design enables other screens to upload resources to the glasses
-        // you need to move the requestResourcesUpload() call to the onPause() method to assure that no other screen
-        // uploaded other resources to the same slots used by your screen
-    }
-
-    override func onResourcesUploadStart() {
-        super.onResourcesUploadStart()
         text.setVisibility(isVisible: true)
         text.setText(text: "Loading...")
     }
+
     
     override func onResourceUploadResult(resource: UIResource) {
         text.setText(text: "\(resource.getResourceName()) was loaded")
