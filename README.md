@@ -15,15 +15,9 @@ Each sample demonstrates one main feature and, for your convenience, has a built
 
 The SDK API enables implementing those functionalities without the need to use our stock UI
 
-## Start app development with these key steps
+## Getting Started
 
-1. Read our [Development Resources](https://everysight.github.io/maverick_docs/) documentation
-
-2. Download the latest SDK libraries from [SDK Repository](https://github.com/everysight-maverick/sdk)
-
-3. Explore the [Android samples folder](./android) and the [IOS samples folder](./ios) within this repository
-
-4. Build & Run the 'Hello World' sample project [IOS](./ios/HelloWorld)/[Android](./android/helloworld)
+To start Maverick application development follow our [Starting application development](https://everysight.github.io/maverick_docs/start-development) guide.
 
 ---
 
