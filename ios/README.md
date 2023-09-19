@@ -25,7 +25,7 @@ Sample | Description
 All the samples are built and run using Xcode.
 
 - Clone\Download this repository to your pc
-- Copy the SDK IOS frameworks files you got (`EvsKit.framework` and  `NativeEvsKit.framework`) to samples-> IOS-> lib
+- Copy the SDK IOS frameworks files you got (`EvsKit.framework` and  `NativeEvsKit.framework`) to samples-> IOS-> libs/
 
 **For each sample**:
 - Create a folder named `Resources` and add the api key certificate file by dragging and dropping the file on to the xcode `Resources` folder.
