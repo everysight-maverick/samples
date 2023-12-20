@@ -16,8 +16,9 @@ import com.everysight.evskit.android.Evs
 
 class ImagesHandlingActivity : Activity(), IEvsCommunicationEvents, IEvsAppEvents {
 
-    private val screenMain = ImagesHandlingScreen()
-    private var screenBatch : ImagesBatchScreen? = null
+    private  val screens = arrayListOf(ImagesHandlingScreen(),ImagesBatchScreen(),ImagePopupScreen())
+    private var nextScreenIndex = 0
+
     private lateinit var txtStatus: TextView
     companion object{
         private const val TAG = "ImagesHandlingActivity"
@@ -30,7 +31,7 @@ class ImagesHandlingActivity : Activity(), IEvsCommunicationEvents, IEvsAppEvent
 
         initSdk()
 
-        Evs.instance().screens().addScreen(screenMain)
+        showNextScreen()
         txtStatus = findViewById(R.id.txtStatus)
 
         findViewById<Button>(R.id.btnConfigure).setOnClickListener{
@@ -40,21 +41,16 @@ class ImagesHandlingActivity : Activity(), IEvsCommunicationEvents, IEvsAppEvent
             Evs.instance().showUI("settings")
         }
 
-        findViewById<Button>(R.id.btnBatchScreen).setOnClickListener{
-            if(screenBatch==null){
-                screenBatch = ImagesBatchScreen()
-
-                //we add screen to the screen stack to be displayed
-                Evs.instance().screens().addScreen(screenBatch!!)
-            }
-            else{
-                //we remove the screen from the screen stack. the previous screen will
-                //become the topmost screen so it will be displayed on the glasses
-                Evs.instance().screens().removeScreen(screenBatch!!)
-                screenBatch = null
-            }
+        findViewById<Button>(R.id.btnNextScreen).setOnClickListener{
+            showNextScreen()
         }
 
+    }
+
+    private fun showNextScreen() {
+        Evs.instance().screens().removeTopmostScreen()
+        Evs.instance().screens().addScreen(screens[nextScreenIndex])
+        nextScreenIndex = (nextScreenIndex+1)%screens.size
     }
 
     override fun onDestroy() {

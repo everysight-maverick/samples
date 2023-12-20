@@ -26,11 +26,11 @@
             android:layout_margin="2dp"
             android:text="Settings"/>
         <Button
-            android:id="@+id/btnBatchScreen"
+            android:id="@+id/btnNextScreen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
-            android:text="Toggle Batch Load Screen"/>
+            android:text="Show Next Screen"/>
 
         <TextView
             android:id="@+id/txtStatus"
