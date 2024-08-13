@@ -29,6 +29,21 @@ Open the samples folder with Android Studio:
 - **For each sample** add the api key certificate to the `assets` folder
 - Add **both of the SDK libraries** to the [libs](./libs) folder
 
+## proguard-rules.pro
+
+When enabling minify, please add the following rules to the proguard-rules.pro file:
+```
+-keepattributes InnerClasses
+
+-keep class io.jsonwebtoken.** { *; }
+-keepnames class io.jsonwebtoken.* { *; }
+-keepnames interface io.jsonwebtoken.* { *; }
+
+-keep class com.google.gson.reflect.TypeToken
+-keep class * extends com.google.gson.reflect.TypeToken
+-keep public class * implements java.lang.reflect.Type
+```
+
 ### Note
 
 Before launching a sample **make sure the previous one is closed** (only one application can be connected to the glasses simultaneously)
