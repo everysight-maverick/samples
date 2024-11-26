@@ -4,7 +4,9 @@
 
 This repository contains sample projects for IOS and Android applications for the Everysight's Maverick Smart Glasses.
 
-The Samples are compatible with the **latest Maverick SDK version**. 
+The Samples are compatible with the **latest Maverick SDK version** 
+
+> If you need samples compatible with older SDK versions, please check-out the required branch.
 
 Each sample demonstrates one main feature and, for your convenience, has a built in UI functionalities of:
 
