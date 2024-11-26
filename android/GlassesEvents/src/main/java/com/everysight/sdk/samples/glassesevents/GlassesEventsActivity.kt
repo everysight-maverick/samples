@@ -42,7 +42,7 @@ class GlassesEventsActivity : Activity() {
             Evs.instance().showUI("configure")
         }
         findViewById<Button>(R.id.btnSettings).setOnClickListener{
-            Evs.instance().showUI("settings")
+            Evs.instance().showUI("adjust")
         }
 
     }
@@ -158,6 +158,10 @@ class GlassesEventsActivity : Activity() {
         override fun onReady() {
             showMessage("Ready!")
             Evs.instance().display().turnDisplayOn()
+        }
+
+        override fun onUnReady() {
+
         }
 
         override fun onError(errCode: AppErrorCode, description: String) {

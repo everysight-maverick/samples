@@ -18,7 +18,8 @@ class GlassesControlScreen : Screen {
         add(uiElement: text)
     }
     
-    override func onTouch(touch: TouchDirection) {
-        text.setText(text: "Touch \(touch)")
+    override func onTouch(touchDirection: TouchDirection) -> Bool {
+        text.setText(text: "Touch \(touchDirection)")
+        return false
     }
 }

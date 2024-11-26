@@ -1,15 +1,22 @@
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.jetbrains.kotlin.android)
+}
 
 android {
-    compileSdkVersion 32
+    namespace 'com.everysight.sdk.samples.imageshandling'
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.everysight.sdk.samples.imageshandling"
-        minSdkVersion 26
-        targetSdkVersion 32
+        minSdk 26
+        targetSdk 34
         versionCode 1
         versionName "1.0"
+
+        vectorDrawables {
+            useSupportLibrary true
+        }
     }
 
     buildTypes {
@@ -18,24 +25,24 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
-    kotlinOptions {
-        freeCompilerArgs += "-Xopt-in=kotlin.ExperimentalStdlibApi"
-        freeCompilerArgs += "-Xopt-in=kotlin.ExperimentalUnsignedTypes"
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
-}
-
-
-repositories {
-    mavenCentral()
-    flatDir {
-        dirs '../libs'
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    packaging {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
     }
 }
 
 dependencies {
-    implementation(name: 'NativeEvsKit', ext: 'jar')
-    implementation(name: 'EvsKit', ext: 'aar')
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'com.google.android.material:material:1.6.0'
+    implementation libs.evskit
+    implementation libs.nativeevskit
+
+    implementation libs.kotlin.stdlib
+    implementation libs.android.material
 }

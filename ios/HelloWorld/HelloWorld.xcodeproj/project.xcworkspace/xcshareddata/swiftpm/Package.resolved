@@ -1,0 +1,15 @@
+{
+  "originHash" : "42638ebf93bace319b39d0b4401cac994dc7b409a0e86657272a3d69c300df4e",
+  "pins" : [
+    {
+      "identity" : "m1-ios-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/everysight-maverick/m1-ios-spm.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "0a2afe022d64219cee8b65f666588399825566ae"
+      }
+    }
+  ],
+  "version" : 3
+}

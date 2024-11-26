@@ -37,7 +37,7 @@ class CustomControlsActivity : Activity(), IEvsCommunicationEvents, IEvsAppEvent
             Evs.instance().showUI("configure")
         }
         findViewById<Button>(R.id.btnSettings).setOnClickListener{
-            Evs.instance().showUI("settings")
+            Evs.instance().showUI("adjust")
         }
     }
 
@@ -108,6 +108,10 @@ class CustomControlsActivity : Activity(), IEvsCommunicationEvents, IEvsAppEvent
 
     override fun onReady() {
         Evs.instance().display().turnDisplayOn()
+    }
+
+    override fun onUnReady() {
+
     }
 
     override fun onError(errCode: AppErrorCode, description: String) {

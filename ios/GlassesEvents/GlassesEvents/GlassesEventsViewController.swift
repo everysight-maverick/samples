@@ -47,7 +47,7 @@ class GlassesEventsViewController: UIViewController {
     }
     
     @IBAction func onSettingsPressed(_ sender: Any) {
-        Evs.instance().showUI(name: "settings")
+        Evs.instance().showUI(name: "adjust")
     }
     
 }
@@ -65,6 +65,10 @@ extension GlassesEventsViewController : IEvsAppEvents {
     
     func onReady() {
         Evs.instance().display().turnDisplayOn()
+    }
+    
+    func onUnReady() {
+        
     }
     
     func onError(errCode: AppErrorCode, description: String) {

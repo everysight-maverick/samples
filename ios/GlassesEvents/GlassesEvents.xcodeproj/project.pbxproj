@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A06E1A242CD91A7B00AF2321 /* EvsKit in Frameworks */ = {isa = PBXBuildFile; productRef = A06E1A232CD91A7B00AF2321 /* EvsKit */; };
+		A06E1A262CD91A7B00AF2321 /* NativeEvsKit in Frameworks */ = {isa = PBXBuildFile; productRef = A06E1A252CD91A7B00AF2321 /* NativeEvsKit */; };
+		A06E1A3F2CD91AE200AF2321 /* sdk.key in Resources */ = {isa = PBXBuildFile; fileRef = A06E1A3E2CD91AE200AF2321 /* sdk.key */; };
 		B2064C47252D1B7D00BD36AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064C46252D1B7D00BD36AA /* AppDelegate.swift */; };
 		B2064C49252D1B7D00BD36AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064C48252D1B7D00BD36AA /* SceneDelegate.swift */; };
 		B2064C4B252D1B7D00BD36AA /* GlassesEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064C4A252D1B7D00BD36AA /* GlassesEventsViewController.swift */; };
@@ -14,28 +17,10 @@
 		B2064C50252D1B7E00BD36AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2064C4F252D1B7E00BD36AA /* Assets.xcassets */; };
 		B2064C53252D1B7E00BD36AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2064C51252D1B7E00BD36AA /* LaunchScreen.storyboard */; };
 		B2064C69252D1E0200BD36AA /* GlassesEventsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2064C68252D1E0200BD36AA /* GlassesEventsScreen.swift */; };
-		B2F8A383257F6948004E4619 /* NativeEvsKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F8A381257F6948004E4619 /* NativeEvsKit.xcframework */; };
-		B2F8A384257F6948004E4619 /* NativeEvsKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2F8A381257F6948004E4619 /* NativeEvsKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B2F8A385257F6948004E4619 /* EvsKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F8A382257F6948004E4619 /* EvsKit.xcframework */; };
-		B2F8A386257F6948004E4619 /* EvsKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2F8A382257F6948004E4619 /* EvsKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		B2F8A387257F6948004E4619 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				B2F8A384257F6948004E4619 /* NativeEvsKit.xcframework in Embed Frameworks */,
-				B2F8A386257F6948004E4619 /* EvsKit.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		A06E1A3E2CD91AE200AF2321 /* sdk.key */ = {isa = PBXFileReference; lastKnownFileType = text; path = sdk.key; sourceTree = "<group>"; };
 		B2064C43252D1B7D00BD36AA /* GlassesEvents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlassesEvents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2064C46252D1B7D00BD36AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2064C48252D1B7D00BD36AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,12 +29,8 @@
 		B2064C4F252D1B7E00BD36AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2064C52252D1B7E00BD36AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2064C54252D1B7E00BD36AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2064C5D252D1BEC00BD36AA /* EvsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EvsKit.framework; path = ../libs/EvsKit.framework; sourceTree = "<group>"; };
-		B2064C61252D1BEE00BD36AA /* NativeEvsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NativeEvsKit.framework; path = ../libs/NativeEvsKit.framework; sourceTree = "<group>"; };
 		B2064C68252D1E0200BD36AA /* GlassesEventsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassesEventsScreen.swift; sourceTree = "<group>"; };
 		B2077B3D254FE343008430F2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B2F8A381257F6948004E4619 /* NativeEvsKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = NativeEvsKit.xcframework; path = ../libs/NativeEvsKit.xcframework; sourceTree = "<group>"; };
-		B2F8A382257F6948004E4619 /* EvsKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = EvsKit.xcframework; path = ../libs/EvsKit.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2F8A383257F6948004E4619 /* NativeEvsKit.xcframework in Frameworks */,
-				B2F8A385257F6948004E4619 /* EvsKit.xcframework in Frameworks */,
+				A06E1A242CD91A7B00AF2321 /* EvsKit in Frameworks */,
+				A06E1A262CD91A7B00AF2321 /* NativeEvsKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,10 +82,6 @@
 		B2064C5C252D1BEC00BD36AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B2F8A382257F6948004E4619 /* EvsKit.xcframework */,
-				B2F8A381257F6948004E4619 /* NativeEvsKit.xcframework */,
-				B2064C61252D1BEE00BD36AA /* NativeEvsKit.framework */,
-				B2064C5D252D1BEC00BD36AA /* EvsKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,6 +89,7 @@
 		B2064C64252D1CA300BD36AA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A06E1A3E2CD91AE200AF2321 /* sdk.key */,
 				B2077B3D254FE343008430F2 /* README.md */,
 			);
 			path = Resources;
@@ -135,7 +113,6 @@
 				B2064C3F252D1B7D00BD36AA /* Sources */,
 				B2064C40252D1B7D00BD36AA /* Frameworks */,
 				B2064C41252D1B7D00BD36AA /* Resources */,
-				B2F8A387257F6948004E4619 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,6 +146,9 @@
 				Base,
 			);
 			mainGroup = B2064C3A252D1B7D00BD36AA;
+			packageReferences = (
+				B2D30BC82CEF713900265225 /* XCRemoteSwiftPackageReference "m1-ios-spm" */,
+			);
 			productRefGroup = B2064C44252D1B7D00BD36AA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -183,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A06E1A3F2CD91AE200AF2321 /* sdk.key in Resources */,
 				B2064C53252D1B7E00BD36AA /* LaunchScreen.storyboard in Resources */,
 				B2064C50252D1B7E00BD36AA /* Assets.xcassets in Resources */,
 				B2064C4E252D1B7D00BD36AA /* Main.storyboard in Resources */,
@@ -357,8 +338,12 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.everysight.sdk.samples.GlassesEvents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -378,8 +363,12 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.everysight.sdk.samples.GlassesEvents;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -405,6 +394,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A06E1A222CD91A7B00AF2321 /* XCRemoteSwiftPackageReference "m1-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/everysight-maverick/m1-ios-spm.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		B2D30BC82CEF713900265225 /* XCRemoteSwiftPackageReference "m1-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/everysight-maverick/m1-ios-spm.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A06E1A232CD91A7B00AF2321 /* EvsKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A06E1A222CD91A7B00AF2321 /* XCRemoteSwiftPackageReference "m1-ios-spm" */;
+			productName = EvsKit;
+		};
+		A06E1A252CD91A7B00AF2321 /* NativeEvsKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A06E1A222CD91A7B00AF2321 /* XCRemoteSwiftPackageReference "m1-ios-spm" */;
+			productName = NativeEvsKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B2064C3B252D1B7D00BD36AA /* Project object */;
 }

@@ -2,6 +2,7 @@ package com.everysight.sdk.samples.inertialsensors
 
 import UIKit.app.Screen
 import UIKit.app.data.CalibrationStatus
+import UIKit.app.data.ScreenRenderRate
 import UIKit.app.data.YprData
 import UIKit.services.IEvsYprSensorsEvents
 import com.everysight.evskit.android.Evs

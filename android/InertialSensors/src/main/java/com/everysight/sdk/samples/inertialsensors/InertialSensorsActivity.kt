@@ -12,6 +12,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.TextView
+import androidx.core.app.ActivityCompat.requestPermissions
 import com.everysight.evskit.android.Evs
 
 
@@ -40,7 +41,7 @@ class InertialSensorsActivity : Activity() {
             Evs.instance().showUI("configure")
         }
         findViewById<Button>(R.id.btnSettings).setOnClickListener{
-            Evs.instance().showUI("settings")
+            Evs.instance().showUI("adjust")
         }
 
     }
@@ -55,9 +56,7 @@ class InertialSensorsActivity : Activity() {
     private fun enableSensor() {
 
         Log.i(TAG,"enableSensor")
-        with(Evs.instance().sensors() ){
-            enableSensorsFusion(SensorRate.rate1, false)
-        }
+        Evs.instance().sensors().enableInertialSensors()
     }
     override fun onDestroy() {
         super.onDestroy()
@@ -113,7 +112,7 @@ class InertialSensorsActivity : Activity() {
     /**
      * Communication Events
      */
-    inner class CommEvents:IEvsCommunicationEvents {
+    inner class CommEvents: IEvsCommunicationEvents {
         override fun onAdapterStateChanged(isEnabled: Boolean) {
             showMessage("Adapter enabled=$isEnabled")
         }
@@ -144,6 +143,10 @@ class InertialSensorsActivity : Activity() {
             showMessage("Ready!")
             Evs.instance().display().turnDisplayOn()
             enableSensor()
+        }
+
+        override fun onUnReady() {
+
         }
 
         override fun onError(errCode: AppErrorCode, description: String) {

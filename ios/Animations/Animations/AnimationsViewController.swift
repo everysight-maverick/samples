@@ -44,7 +44,7 @@ class AnimationsViewController: UIViewController {
     }
     
     @IBAction func onSettingsPressed(_ sender: Any) {
-        Evs.instance().showUI(name: "settings")
+        Evs.instance().showUI(name: "adjust")
     }
     
 }
@@ -84,6 +84,10 @@ extension AnimationsViewController : IEvsAppEvents {
     
     func onReady() {
         Evs.instance().display().turnDisplayOn()
+    }
+    
+    func onUnReady() {
+        
     }
     
     func onError(errCode: AppErrorCode, description: String) {

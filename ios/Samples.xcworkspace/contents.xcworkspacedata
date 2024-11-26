@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SwiftUIGlassesControl/SwiftUIGlassesControl.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Ar/Ar.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:OtaHandling/OtaHandling.xcodeproj">
    </FileRef>
    <FileRef

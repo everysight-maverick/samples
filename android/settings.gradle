@@ -1,9 +1,40 @@
-include ':helloWorld'
-include ':GlassesControl'
-include ':UIElements'
-include ':CustomControls'
-include ':ImagesHandling'
+pluginManagement {
+    repositories {
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+//        mavenLocal()
+        maven {
+            url = uri("https://maven.pkg.github.com/everysight-maverick/m1-android-maven")
+            credentials {
+                username = "YOUR_PERSONAL_GITHUB_USER_NAME"
+                password = "YOUR_PERSONAL_GITHUB_USER_TOKEN"
+            }
+        }
+    }
+}
+
+rootProject.name = "Everysight Samples"
 include ':Animations'
+include ':Ar'
+include ':CustomControls'
+include ':GlassesControl'
 include ':GlassesEvents'
-include ':OtaHandling'
+include ':helloworld'
+include ':ImagesHandling'
 include ':InertialSensors'
+include ':OtaHandling'
+include ':UIElements'
+include ':compose'

@@ -36,7 +36,7 @@ class HelloWorldActivity : Activity(), IEvsCommunicationEvents, IEvsAppEvents {
             Evs.instance().showUI("configure")
         }
         findViewById<Button>(R.id.btnSettings).setOnClickListener{
-            Evs.instance().showUI("settings")
+            Evs.instance().showUI("adjust")
         }
 
     }
@@ -108,6 +108,10 @@ class HelloWorldActivity : Activity(), IEvsCommunicationEvents, IEvsAppEvents {
 
     override fun onReady() {
         Evs.instance().display().turnDisplayOn()
+    }
+
+    override fun onUnReady() {
+
     }
 
     override fun onError(errCode: AppErrorCode, description: String) {

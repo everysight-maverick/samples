@@ -17,8 +17,9 @@ class GlassesControlScreen:Screen() {
         add(text)
     }
 
-    override fun onTouch(touch: TouchDirection) {
+    override fun onTouch(touch: TouchDirection): Boolean {
         super.onTouch(touch)
         text.setText("Touch: $touch")
+        return false
     }
 }

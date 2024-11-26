@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Compose</string>
+    <string name="evs_sdk_was_not_initialized_yet">Evs SDK was not initialized yet</string>
+    <string name="tap_to_adjust">Tap to adjust</string>
+    <string name="long_press_to_re_configure">Long press to re-configure</string>
+    <string name="approve_permissions_in_settings">Approve permissions in settings</string>
+</resources>

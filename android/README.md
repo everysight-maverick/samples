@@ -20,29 +20,31 @@ Sample | Description
 [Animations](./Animations) | Performing animations
 [OtaHandling](./OtaHandling) | Glasses firmware updates
 [Inertial Sensors](./InertialSensors) | Using Inertial Sensors 
+[Compose](./compose) | Jetpack Compose App example
+[AR](./Ar) | LOS (Line fo sight) example
 
 ## Using the samples
 
 Open the samples folder with Android Studio:
 
 - Clone\Download this repository to your pc
-- **For each sample** add the api key certificate to the `assets` folder
-- Add **both of the SDK libraries** to the [libs](./libs) folder
+- **For each sample** add your `sdk.key` to the `assets` folder
+- In `settings.gradle` update the following:
+  - Create GitHub token with scope `read:packages` ([click here to generate a token](https://github.com/settings/tokens/new))
+  - Add your token information in the credentials block
+  
+  ``` kotlin
+  credentials {
+    username = "YOUR_PERSONAL_GITHUB_USER_NAME"
+    password = "YOUR_PERSONAL_GITHUB_USER_TOKEN"
+  }
+  ```
+  - Additional information can be found [here](https://everysight.github.io/maverick_docs/libraries-api/android/)
+    
 
-## proguard-rules.pro
+## More information
 
-When enabling minify, please add the following rules to the proguard-rules.pro file:
-```
--keepattributes InnerClasses
-
--keep class io.jsonwebtoken.** { *; }
--keepnames class io.jsonwebtoken.* { *; }
--keepnames interface io.jsonwebtoken.* { *; }
-
--keep class com.google.gson.reflect.TypeToken
--keep class * extends com.google.gson.reflect.TypeToken
--keep public class * implements java.lang.reflect.Type
-```
+More information about Android application setup can be found in our [developers portal](https://everysight.github.io/maverick_docs/libraries-api/overview/)
 
 ### Note
 

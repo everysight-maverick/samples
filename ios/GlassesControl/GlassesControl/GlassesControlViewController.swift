@@ -44,7 +44,7 @@ class GlassesControlViewController: UIViewController {
     }
     
     @IBAction func onSettingsPressed(_ sender: Any) {
-        Evs.instance().showUI(name: "settings")
+        Evs.instance().showUI(name: "adjust")
     }
     
     @IBAction func onScreenOnPressed(_ sender: Any) {
@@ -155,6 +155,10 @@ extension GlassesControlViewController : IEvsAppEvents {
     func onReady() {
         Evs.instance().display().turnDisplayOn()
         Evs.instance().sensors().enableTouch(enable: true)
+    }
+    
+    func onUnReady() {
+        
     }
     
     func onError(errCode: AppErrorCode, description: String) {

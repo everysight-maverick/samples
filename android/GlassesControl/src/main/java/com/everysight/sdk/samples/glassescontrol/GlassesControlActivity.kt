@@ -132,7 +132,7 @@ class GlassesControlActivity : Activity(), IEvsAppEvents {
     }
 
     fun configureGlasses(view: View) {Evs.instance().showUI("configure")}
-    fun showSettings(view: View) {Evs.instance().showUI("settings")}
+    fun showSettings(view: View) {Evs.instance().showUI("adjust")}
     fun screenOn(view: View) {Evs.instance().display().turnDisplayOn()}
     fun screenOff(view: View) {Evs.instance().display().turnDisplayOff()}
     fun screenLeft(view: View) {
@@ -173,6 +173,10 @@ class GlassesControlActivity : Activity(), IEvsAppEvents {
     override fun onReady() {
         Evs.instance().display().turnDisplayOn()
         Evs.instance().sensors().enableTouch(true)
+    }
+
+    override fun onUnReady() {
+
     }
 
     override fun onError(errCode: AppErrorCode, description: String) {

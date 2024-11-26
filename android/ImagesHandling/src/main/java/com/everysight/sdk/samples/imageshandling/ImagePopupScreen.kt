@@ -29,14 +29,14 @@ private class MyPopup:UIElementsGroup(){
             .setResource(img)
             .setX(getWidth()/2-img.imageWidth/2)
             .setY(MARGIN)
-            .addToGroup(this)
+            .addTo(this)
         Text()
             .setText("I'm a popup")
             .setCenter(getWidth()/2)
             .setResource(Font.StockFont.Small)
             .setY(img.imageHeight+MARGIN)
             .setForegroundColor(EvsColor.Orange)
-            .addToGroup(this)
+            .addTo(this)
 
         showBorder(true)
     }
@@ -84,7 +84,7 @@ class ImagePopupScreen:Screen() {
             .setResource(Font.StockFont.Small)
             .setCenter(getWidth()/2)
             .setY(img.getY()+img.getHeight()+5)//put text below the image
-            .addToScreen(this)
+            .addTo(this)
 
         setStatus("Waiting...")
 
@@ -111,7 +111,7 @@ class ImagePopupScreen:Screen() {
             //show image after 5 seconds
             if(timestampMs-refTimestampMs>5000) {
                 setStatus("Showing ${img.getResource()!!.getResourceName()}")
-                img.addToScreen(this) // alternatively call add(img)
+                img.addTo(this) // alternatively call add(img)
                 refTimestampMs = timestampMs
             }
         }

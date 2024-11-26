@@ -42,7 +42,7 @@ class UIElementsViewController: UIViewController {
     }
     
     @IBAction func onSettingsPressed(_ sender: Any) {
-        Evs.instance().showUI(name: "settings")
+        Evs.instance().showUI(name: "adjust")
     }
     
 }
@@ -82,6 +82,10 @@ extension UIElementsViewController : IEvsAppEvents {
     
     func onReady() {
         Evs.instance().display().turnDisplayOn()
+    }
+    
+    func onUnReady() {
+        
     }
     
     func onError(errCode: AppErrorCode, description: String) {
