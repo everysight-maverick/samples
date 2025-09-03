@@ -2,12 +2,12 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 32
-
+    compileSdkVersion 35
+    namespace "com.everysight.sdk.samples.glassesevents"
     defaultConfig {
         applicationId "com.everysight.sdk.samples.glassesevents"
-        minSdkVersion 26
-        targetSdkVersion 32
+        minSdkVersion 30
+        targetSdkVersion 35
         versionCode 1
         versionName "1.0"
     }
@@ -22,6 +22,11 @@ android {
     kotlinOptions {
         freeCompilerArgs += "-Xopt-in=kotlin.ExperimentalStdlibApi"
         freeCompilerArgs += "-Xopt-in=kotlin.ExperimentalUnsignedTypes"
+        jvmTarget = JavaVersion.VERSION_11
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 }
 

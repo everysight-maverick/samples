@@ -25,18 +25,19 @@ private class MyPopup:UIElementsGroup(){
         setBackgroundColor(EvsColor.Black)
 
         val img = ImgSrc("apple.jpg",ImgSrc.Slot.s2)
-        Image()
+        val im = Image()
             .setResource(img)
             .setX(getWidth()/2-img.imageWidth/2)
             .setY(MARGIN)
-            .addToGroup(this)
-        Text()
+        add(im)
+
+        val txt = Text()
             .setText("I'm a popup")
             .setCenter(getWidth()/2)
             .setResource(Font.StockFont.Small)
             .setY(img.imageHeight+MARGIN)
             .setForegroundColor(EvsColor.Orange)
-            .addToGroup(this)
+        add(txt)
 
         showBorder(true)
     }
@@ -84,7 +85,7 @@ class ImagePopupScreen:Screen() {
             .setResource(Font.StockFont.Small)
             .setCenter(getWidth()/2)
             .setY(img.getY()+img.getHeight()+5)//put text below the image
-            .addToScreen(this)
+        add(status)
 
         setStatus("Waiting...")
 
@@ -111,7 +112,7 @@ class ImagePopupScreen:Screen() {
             //show image after 5 seconds
             if(timestampMs-refTimestampMs>5000) {
                 setStatus("Showing ${img.getResource()!!.getResourceName()}")
-                img.addToScreen(this) // alternatively call add(img)
+                add(img) // alternatively call add(img)
                 refTimestampMs = timestampMs
             }
         }
