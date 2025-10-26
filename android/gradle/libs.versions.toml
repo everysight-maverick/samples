@@ -1,19 +1,19 @@
 [versions]
 # Maverick SDK Version
-evskit = "2.6.0"
+evskit = "2.6.1"
 
 # Other Versions
-agp = "8.6.1"
-kotlin = "2.0.21"
-lifecycle-viewmodel-compose = "2.8.7"
+agp = "8.13.0"
+kotlin = "2.2.20"
+lifecycle-viewmodel-compose = "2.9.4"
 material = "1.12.0"
-kotlin-stdlib = "2.0.21"
-core-ktx = "1.15.0"
-espresso-core = "3.6.1"
-lifecycle-runtime-ktx = "2.8.7"
-activity-compose = "1.9.3"
-compose-bom = "2024.10.01"
-accompanist-permissions = "0.36.0"
+kotlin-stdlib = "2.2.20"
+core-ktx = "1.17.0"
+espresso-core = "3.7.0"
+lifecycle-runtime-ktx = "2.9.4"
+activity-compose = "1.11.0"
+compose-bom = "2025.10.01"
+accompanist-permissions = "0.37.3"
 
 [libraries]
 # Maverick SDK Libraries
