@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A06E1A092CD908AE00AF2321 /* EvsKit in Frameworks */ = {isa = PBXBuildFile; productRef = A06E1A082CD908AE00AF2321 /* EvsKit */; };
-		A06E1A0B2CD908AE00AF2321 /* NativeEvsKit in Frameworks */ = {isa = PBXBuildFile; productRef = A06E1A0A2CD908AE00AF2321 /* NativeEvsKit */; };
-		B250EBFA2CEA101F00FC95E1 /* sdk.key in Resources */ = {isa = PBXBuildFile; fileRef = B250EBF92CEA101F00FC95E1 /* sdk.key */; };
+		A02C0D452EAE701D00E46DFF /* EvsKit in Frameworks */ = {isa = PBXBuildFile; productRef = A02C0D442EAE701D00E46DFF /* EvsKit */; };
+		A02C0D472EAE701D00E46DFF /* NativeEvsKit in Frameworks */ = {isa = PBXBuildFile; productRef = A02C0D462EAE701D00E46DFF /* NativeEvsKit */; };
+		A02C0D492EAE719700E46DFF /* sdk.key in Resources */ = {isa = PBXBuildFile; fileRef = A02C0D482EAE713400E46DFF /* sdk.key */; };
 		B278F42925235537006C0D94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278F42825235537006C0D94 /* AppDelegate.swift */; };
 		B278F42B25235537006C0D94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278F42A25235537006C0D94 /* SceneDelegate.swift */; };
 		B278F42D25235537006C0D94 /* HelloWorldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B278F42C25235537006C0D94 /* HelloWorldViewController.swift */; };
@@ -33,8 +33,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A02C0D482EAE713400E46DFF /* sdk.key */ = {isa = PBXFileReference; explicitFileType = compiled; path = sdk.key; sourceTree = "<group>"; };
 		B2077B43254FE396008430F2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B250EBF92CEA101F00FC95E1 /* sdk.key */ = {isa = PBXFileReference; lastKnownFileType = text; name = sdk.key; path = /Users/benamsallem/docs/everysight/git/EpsilonSamplesNew/ios/libs/sdk.key; sourceTree = "<absolute>"; };
 		B278F42525235537006C0D94 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B278F42825235537006C0D94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B278F42A25235537006C0D94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,8 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A06E1A092CD908AE00AF2321 /* EvsKit in Frameworks */,
-				A06E1A0B2CD908AE00AF2321 /* NativeEvsKit in Frameworks */,
+				A02C0D452EAE701D00E46DFF /* EvsKit in Frameworks */,
+				A02C0D472EAE701D00E46DFF /* NativeEvsKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				B2077B43254FE396008430F2 /* README.md */,
-				B250EBF92CEA101F00FC95E1 /* sdk.key */,
+				A02C0D482EAE713400E46DFF /* sdk.key */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -153,7 +153,7 @@
 			);
 			mainGroup = B278F41C25235537006C0D94;
 			packageReferences = (
-				B2D30BCD2CEF715C00265225 /* XCRemoteSwiftPackageReference "m1-ios-spm" */,
+				A02C0D432EAE701D00E46DFF /* XCRemoteSwiftPackageReference "m1-ios-spm" */,
 			);
 			productRefGroup = B278F42625235537006C0D94 /* Products */;
 			projectDirPath = "";
@@ -169,10 +169,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A02C0D492EAE719700E46DFF /* sdk.key in Resources */,
 				B278F43525235537006C0D94 /* LaunchScreen.storyboard in Resources */,
 				B278F43225235537006C0D94 /* Assets.xcassets in Resources */,
 				B278F43025235537006C0D94 /* Main.storyboard in Resources */,
-				B250EBFA2CEA101F00FC95E1 /* sdk.key in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,17 +402,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A06E1A072CD908AE00AF2321 /* XCRemoteSwiftPackageReference "m1-ios-spm" */ = {
+		A02C0D432EAE701D00E46DFF /* XCRemoteSwiftPackageReference "m1-ios-spm" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/everysight-maverick/m1-ios-spm.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		B2D30BCD2CEF715C00265225 /* XCRemoteSwiftPackageReference "m1-ios-spm" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/everysight-maverick/m1-ios-spm.git";
+			repositoryURL = "https://github.com/everysight-maverick/m1-ios-spm";
 			requirement = {
 				branch = master;
 				kind = branch;
@@ -421,14 +413,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A06E1A082CD908AE00AF2321 /* EvsKit */ = {
+		A02C0D442EAE701D00E46DFF /* EvsKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A06E1A072CD908AE00AF2321 /* XCRemoteSwiftPackageReference "m1-ios-spm" */;
+			package = A02C0D432EAE701D00E46DFF /* XCRemoteSwiftPackageReference "m1-ios-spm" */;
 			productName = EvsKit;
 		};
-		A06E1A0A2CD908AE00AF2321 /* NativeEvsKit */ = {
+		A02C0D462EAE701D00E46DFF /* NativeEvsKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A06E1A072CD908AE00AF2321 /* XCRemoteSwiftPackageReference "m1-ios-spm" */;
+			package = A02C0D432EAE701D00E46DFF /* XCRemoteSwiftPackageReference "m1-ios-spm" */;
 			productName = NativeEvsKit;
 		};
 /* End XCSwiftPackageProductDependency section */
