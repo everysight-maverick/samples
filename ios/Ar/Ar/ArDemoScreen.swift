@@ -29,7 +29,7 @@ class ArDemoScreen: ArScreen {
             tapText = HudText(txt: "LOADING...")
             tapText!.setX(x: getWidth() / 2 - tapText!.getWidth() / 2)
             tapText!.setY(y: getHeight() / 2 - tapText!.getHeight() / 2)
-            add(uiElement: tapText!)
+            add(arWindow: tapText!)
         }
         if (!quatOK && quat.isValid && !quat.isIdentity) {
             quatOK = true
@@ -52,7 +52,7 @@ class ArDemoScreen: ArScreen {
                 if (cubes.count > 0 && Float.random(in: 0.0..<1.0) > 0.65) {
                     let t = HudText(txt: responses[Int.random(in: 0..<responses.count)])
                     t.setEyePosition(qtrn: quat)
-                    add(uiElement: t)
+                    add(arWindow: t)
                     texts.append(t)
                     return true
                 }
