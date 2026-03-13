@@ -9,3 +9,9 @@ xcuserdata/
 
 org.eclipse.buildship.core.prefs
 sdk.key
+
+# Gradle user home caches (all levels)
+**/.gradle-user-home/
+**/.gradle_user_home/
+**/.derivedData/
+**/.cxx/
